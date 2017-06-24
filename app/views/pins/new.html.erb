@@ -2,8 +2,12 @@
   <%= link_to 'Back', pins_path, class: "btn btn-primary" %>
 </div>
 
-<h1>New Pin</h1>
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h1>New Pin</h1>
+  </div>
 
-<%= render 'form', pin: @pin %>
-
-<%= link_to 'Back', pins_path %>
+  <div class="panel-body">
+    <%= render 'form', pin: @pin %>
+  </div>
+</div>
